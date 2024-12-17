@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.image-container img.show {
+    opacity: 4;
+}
+.message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.message.show {
+    opacity: 1;
+}
